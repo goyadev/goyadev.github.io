@@ -4,36 +4,59 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inder&display=swap");
+    </style>
+    <title>Goya Zheng Portfolio</title>
   </head>
 
   <body>
     <header>
-      <h1>Goya Zheng</h1>
+      <h1 id="headingname">Goya Zheng</h1>
 
-      <a href=""> LinkedIn</a>
+      <a href="https://www.linkedin.com/in/goya-zheng-615b54111/" id="linkedin">
+        LinkedIn</a
+      >
 
-      <nav>
-        <a href=""> Bio</a>
-        <a href=""> Projects</a>
-        <a href=""> Contact</a>
-      </nav>
-
-      <a href="">GitHub</a>
+      <a href="https://github.com/goyadev" id="github">GitHub</a>
     </header>
 
     <main>
+      <nav>
+        <div class="navbar">
+          <div class="container nav-container">
+            <input class="checkbox" type="checkbox" name="" id="" />
+            <div class="hamburger-lines">
+              <span class="line line1"></span>
+              <span class="line line2"></span>
+              <span class="line line3"></span>
+            </div>
+
+            <div class="menu-items">
+              <li><a href="#">Bio</a></li>
+              <li><a href="#">Projects</a></li>
+              <li><a href="#">Contact</a></li>
+            </div>
+          </div>
+        </div>
+      </nav>
+
       <section>
+        <span class="dot" id="dot1"> </span>
         <h2>Bio</h2>
       </section>
       <section>
+        <span class="dot" id="dot2"> </span>
         <h2>Projects</h2>
       </section>
       <section>
+        <span class="dot" id="dot3"> </span>
         <h2>Contact</h2>
       </section>
     </main>
-
-    <footer>Copyright 2023</footer>
+    <footer>
+      <p>Copyright 2023</p>
+    </footer>
   </body>
 </html>
