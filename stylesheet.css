@@ -239,13 +239,12 @@ nav {
 /* Main Section with Flex */
 main {
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
   background-color: var(--black);
   text-align: center;
   min-height: 78vh;
-  width: 100vw;
+  /* width: 100vw; */ /* don't want this on bio page */
 }
 
 /* Index Circles for Images */
@@ -293,15 +292,37 @@ main {
 
 #circlebackground {
   height: 500px;
-  width: 500px;
+  width: 130%;
+  margin-left: -15%;
+  /* width: 500px; */
   background-color: #fff;
 }
 
-/* Contract Text for Pages */
+/* Contrast Text for Pages */
 
-/* .pagetextblack {
+p.pagetextblack {
   color: var(--black);
-} */
+  padding: 1rem 15%;
+}
+
+.bio-section h2 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.pagetextblack {
+  color: var(--black);
+}
+
+/* Images for Page */
+
+#bioheadshot {
+  width: 30%;
+  border-radius: 50%;
+}
+
+.bio-section {
+  overflow: hidden;
+}
 
 section {
   margin-bottom: 1rem;
@@ -343,10 +364,9 @@ footer {
   /*Undoing the Hamburger Menu  */
   nav {
     height: auto;
-    width: 100vw;
+    /* width: 100vw; */
     align-self: flex-end;
     text-align: end;
-    /* align-self: flex-end; */
     width: 501px;
   }
 
@@ -381,7 +401,7 @@ footer {
 
   /* Main Section */
   main {
-    width: 100vw;
+    /* width: 100vw; */
   }
   /* Circles */
   #dot1 {
@@ -390,6 +410,7 @@ footer {
   }
   #dot2 {
     height: 450px;
+    width: 450px;
   }
   #dot3 {
     height: 380px;
