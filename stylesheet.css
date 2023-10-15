@@ -87,12 +87,24 @@ header {
   grid-template-columns: 0.5fr 1fr 0.5fr;
   grid-template-rows: 0.5fr 1fr 0.5fr;
   background-color: var(--black);
-  height: 10vh;
+  min-height: 10vh;
   width: 100%;
   text-align: center;
   border-bottom: 2px solid #fff;
   justify-content: space-around;
   align-items: center;
+}
+
+#linkedin {
+  max-width: 40px;
+  justify-self: start;
+  padding: 6px;
+}
+
+#github {
+  max-width: 40px;
+  justify-self: end;
+  padding: 6px;
 }
 
 input,
@@ -473,10 +485,12 @@ fieldset {
 
   #linkedin {
     grid-area: bottomll;
+    justify-self: start;
   }
 
   #github {
-    grid-area: bottomlr;
+    grid-area: bottomll;
+    justify-self: center;
   }
 
   /* link styling desktop */
@@ -536,6 +550,7 @@ fieldset {
     box-shadow: none;
     padding: 5px;
     width: auto;
+    border: 0;
   }
 
   .container .nav-container {
