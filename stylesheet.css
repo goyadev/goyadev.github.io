@@ -30,11 +30,13 @@ h5,
 h6,
 p,
 ol,
-ul {
+ul,
+input,
+textarea {
   margin: 0;
   padding: 0;
   font-weight: normal;
-  font-family: "Inder", sans-serif;
+  font-family: "Inder", Tahoma, sans-serif;
   color: var(--white);
 }
 
@@ -85,7 +87,7 @@ header {
   grid-template-columns: 0.5fr 1fr 0.5fr;
   grid-template-rows: 0.5fr 1fr 0.5fr;
   background-color: var(--black);
-  height: 15vh;
+  min-height: 10vh;
   width: 100%;
   text-align: center;
   border-bottom: 2px solid #fff;
@@ -93,8 +95,43 @@ header {
   align-items: center;
 }
 
+#linkedin {
+  max-width: 40px;
+  justify-self: start;
+  padding: 6px;
+}
+
+#github {
+  max-width: 40px;
+  justify-self: end;
+  padding: 6px;
+}
+
+input,
+textarea {
+  padding: 2px;
+}
+
+#bioheading {
+  padding-bottom: 1rem;
+}
+
 #headingname {
   grid-area: mid;
+}
+
+#projectsmain {
+  display: flex;
+}
+
+.backgroundcircle {
+  margin-bottom: 2rem;
+}
+
+/* the bio sections on the index page */
+.main > a {
+  display: block;
+  margin-bottom: 2rem;
 }
 
 #linkedin {
@@ -105,7 +142,7 @@ header {
   grid-area: bottomr;
 }
 
-/* Nav hidden until navigate to pages  */
+/* Nav Styling*/
 nav {
   background-color: var(--black);
   align-self: flex-start;
@@ -117,6 +154,16 @@ nav {
   min-width: 180px;
   width: 90%;
   grid-area: nav;
+}
+
+.contact-section h2 {
+  text-align: center;
+}
+
+.contact-section {
+  background-color: black;
+  padding: 0 10% 0 10%;
+  margin: auto;
 }
 
 .navbar {
@@ -205,7 +252,7 @@ nav {
 }
 
 .navbar .menu-items {
-  padding-top: 120px;
+  padding-top: 60px;
   box-shadow: inset 0 2000px rgba(0, 0, 0, 0.9);
   height: auto;
   width: 50vw;
@@ -255,14 +302,26 @@ nav {
 /* End Hamburger Nav Styling */
 /* Main Section with Flex */
 main {
-  /* display: flex; */
+  display: flex;
   align-items: center;
   flex-direction: column;
   background-color: var(--black);
   text-align: center;
   min-height: 78vh;
-  /* width: 100vw; */
-  /* don't want this on bio page */
+}
+
+.contact-header {
+  margin-bottom: 2rem;
+}
+
+#fs-frm button {
+  background-color: var(--pink);
+  margin: auto;
+  display: block;
+}
+
+.section {
+  padding: 0 5% 0 5%;
 }
 
 /* Index Circles for Images */
@@ -300,6 +359,7 @@ main {
 }
 
 /* Project Pages Circles for background and image */
+/* For Future: try SVG Mask when not on deadline */
 #circleimage {
   height: 190px;
   width: 190px;
@@ -316,7 +376,7 @@ main {
 /* Contrast Text for Pages */
 p.pagetextblack {
   color: var(--black);
-  padding: 3.5rem 10%;
+  padding: 3.5rem 18%;
   padding-top: 1rem;
   padding-bottom: 4.5rem;
 }
@@ -333,6 +393,7 @@ p.pagetextblack {
 
 /* Images for Page */
 .circleimage {
+  margin-top: 1rem;
   width: 50%;
   border-radius: 50%;
 }
@@ -341,6 +402,11 @@ p.pagetextblack {
   overflow: hidden;
 }
 
+main.contact-section {
+  display: flex;
+}
+
+/* Footer */
 footer {
   height: 6vh;
   background-color: var(--black);
@@ -353,6 +419,55 @@ footer {
 #fs-frm {
   justify-content: center;
   align-items: center;
+  min-height: 600px;
+  width: 100%;
+}
+
+#fs-frm button,
+fieldset {
+  border: 0;
+  font-size: 16px;
+  color: var(--white);
+}
+
+#fs-frm-inputs label {
+  margin-bottom: 5px;
+}
+
+#fs-frm-inputs input {
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+#fs-frm-inputs label,
+#fs-frm-inputs input {
+  display: block;
+  /* border: 0; */
+}
+
+#fs-frm-inputs input::placeholder,
+#fs-frm-inputs textarea::placeholder {
+  color: var(--white);
+}
+
+#full-name {
+  background-color: var(--black);
+  border: 1px solid var(--blue);
+}
+
+#email-address {
+  background-color: var(--black);
+  border: 1px solid var(--pink);
+}
+
+#message {
+  background-color: var(--black);
+  border: 1px solid var(--mint);
+}
+
+#fs-frm-inputs input,
+#fs-frm-inputs textarea {
+  width: 100%;
 }
 
 /* Media Queries Go Here */
@@ -370,12 +485,44 @@ footer {
 
   #linkedin {
     grid-area: bottomll;
+    justify-self: start;
   }
 
   #github {
-    grid-area: bottomlr;
+    grid-area: bottomll;
+    justify-self: center;
   }
 
+  /* link styling desktop */
+
+  #bioimage {
+    display: grid;
+    justify-self: end;
+  }
+
+  #projectimage {
+    justify-self: start;
+  }
+
+  #contactimage {
+    justify-self: end;
+  }
+
+  #biotextlink {
+    justify-self: start;
+  }
+
+  #projecttextlink {
+    justify-self: end;
+  }
+
+  #contacttextlink {
+    justify-self: start;
+  }
+
+  .projectlink {
+    color: var(--mint);
+  }
   /*Undoing the Hamburger Menu  */
   nav {
     height: auto;
@@ -403,6 +550,7 @@ footer {
     box-shadow: none;
     padding: 5px;
     width: auto;
+    border: 0;
   }
 
   .container .nav-container {
@@ -418,29 +566,37 @@ footer {
   }
 
   /* Main Section */
-
   #indexmain {
     display: grid;
     grid-template-areas:
       "img-top text-top"
       "text-mid img-mid"
       "img-bottom text-bottom";
-
     grid-template-rows: 0.33fr 0.33fr 0.33fr;
     grid-template-columns: 0.5fr 0.5fr;
+    padding: 2% 10% 2% 10%;
+  }
+
+  .projectsection img {
+    max-width: 200px;
+  }
+
+  #projectsmain .pagetextblack {
+    padding: 1rem;
   }
 
   /* Circles Index*/
-
   #bioheading {
     grid-area: text-top;
   }
 
   #projectsection {
+    display: grid;
     grid-area: img-mid;
   }
 
   #contactsection {
+    display: grid;
     grid-area: img-bottom;
   }
 
@@ -448,26 +604,35 @@ footer {
     height: 300px;
     width: 300px;
     grid-area: img-top;
+    justify-self: end;
   }
 
   #dot2 {
-    height: 450px;
-    width: 450px;
+    height: 300px;
+    width: 300px;
     grid-area: img-mid;
+    justify-self: start;
   }
 
   #dot3 {
-    height: 380px;
-    width: 380px;
+    height: 300px;
+    width: 300px;
+    grid-area: img-bottom;
+    justify-self: start;
   }
 
   /* Bio and Project Page*/
-
   .backgroundcircle {
     background-color: #020202;
+    display: flex;
+    align-items: flex-start;
+    padding: 0 4rem;
+    min-height: 0;
   }
+
   .pagetextblack {
     color: var(--white);
+    align-self: center;
   }
 
   p.pagetextblack {
@@ -478,16 +643,27 @@ footer {
   #bioheadshot {
     max-width: 300px;
   }
+
   #biotext {
+    padding: 3rem;
     text-align: left;
+    align-self: center;
   }
 
   /* Projects Page Reorganisation through grid */
   #peoplewatchingtext {
     text-align: left;
+    align-self: center;
   }
 
   #lazygreyhoundtext {
     text-align: left;
+    align-self: center;
+  }
+
+  /* Form styling for desktop */
+  .contact-section {
+    background-color: black;
+    padding: 0 30% 0 30%;
   }
 }
