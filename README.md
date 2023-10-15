@@ -41,8 +41,8 @@
 
 #### {{ Screenshots - Mobile}}
 
-![ {{ iPhone SE Mobile Bio }} ]( {{ ./images/iPhone-SE-mobile-bio.png}} )
-![ {{ iPhone SE Mobile Contact }} ]( {{ ./images/iPhone-SE-mobile-contact.png}} )
+![ iPhone SE Mobile Bio ]( ./images/iPhone-SE-mobile-bio.png)
+![ iPhone SE Mobile Contact ]( ./images/iPhone-SE-mobile-contact.png)
 ![ {{ iPhone SE Mobile Index }} ]( {{ ./images/iPhone-SE-mobile-index.png}} )
 ![ {{ iPhone SE Mobile Projects }} ]( {{ ./images/iPhone-SE-mobile-projects.png}} )
 
