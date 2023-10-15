@@ -49,7 +49,6 @@ img {
 }
 
 /* Links */
-
 a {
   text-decoration: none;
   color: var(--white);
@@ -86,7 +85,7 @@ header {
   grid-template-columns: 0.5fr 1fr 0.5fr;
   grid-template-rows: 0.5fr 1fr 0.5fr;
   background-color: var(--black);
-  height: 17vh;
+  height: 15vh;
   width: 100%;
   text-align: center;
   border-bottom: 2px solid #fff;
@@ -108,24 +107,25 @@ header {
 
 /* Nav hidden until navigate to pages  */
 nav {
-  /* background-color: var(--pink); */
+  background-color: var(--black);
   align-self: flex-start;
   /* display: none; */
 }
 
 /* Hamburger Nav */
 .container {
-  max-width: 180px;
+  min-width: 180px;
   width: 90%;
-  margin: auto;
+  grid-area: nav;
 }
 
 .navbar {
   width: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .nav-container {
-  display: flex;
   justify-content: space-between;
   align-items: center;
   height: 62px;
@@ -206,7 +206,7 @@ nav {
 
 .navbar .menu-items {
   padding-top: 120px;
-  box-shadow: inset 0 2000px rgba(0, 0, 0, 0.8);
+  box-shadow: inset 0 2000px rgba(0, 0, 0, 0.9);
   height: auto;
   width: 50vw;
   transform: translate(-150%);
@@ -253,16 +253,16 @@ nav {
 }
 
 /* End Hamburger Nav Styling */
-
 /* Main Section with Flex */
 main {
-  display: flex;
+  /* display: flex; */
   align-items: center;
   flex-direction: column;
   background-color: var(--black);
   text-align: center;
   min-height: 78vh;
-  /* width: 100vw; */ /* don't want this on bio page */
+  /* width: 100vw; */
+  /* don't want this on bio page */
 }
 
 /* Index Circles for Images */
@@ -300,7 +300,6 @@ main {
 }
 
 /* Project Pages Circles for background and image */
-
 #circleimage {
   height: 190px;
   width: 190px;
@@ -315,7 +314,6 @@ main {
 }
 
 /* Contrast Text for Pages */
-
 p.pagetextblack {
   color: var(--black);
   padding: 3.5rem 10%;
@@ -327,13 +325,13 @@ p.pagetextblack {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
+
 .pagetextblack {
   color: var(--black);
   padding: 2rem;
 }
 
 /* Images for Page */
-
 .circleimage {
   width: 50%;
   border-radius: 50%;
@@ -341,10 +339,6 @@ p.pagetextblack {
 
 .bio-section {
   overflow: hidden;
-}
-
-section {
-  margin-bottom: 1rem;
 }
 
 footer {
@@ -355,14 +349,15 @@ footer {
   align-items: center;
 }
 
+/* Form Styling */
+#fs-frm {
+  justify-content: center;
+  align-items: center;
+}
+
 /* Media Queries Go Here */
-
 @media (min-width: 769px) {
-  body {
-    width: auto;
-  }
   /* Repositioning the items in Header */
-
   header {
     display: grid;
     grid-template-areas:
@@ -372,6 +367,7 @@ footer {
     grid-template-columns: 0.25fr 0.25fr 1fr 0.5fr;
     grid-template-rows: 0.5fr 1fr 0.5fr;
   }
+
   #linkedin {
     grid-area: bottomll;
   }
@@ -383,10 +379,12 @@ footer {
   /*Undoing the Hamburger Menu  */
   nav {
     height: auto;
-    /* width: 100vw; */
     align-self: flex-end;
     text-align: end;
-    width: 501px;
+  }
+
+  .container {
+    width: auto;
   }
 
   div .navbar {
@@ -397,16 +395,21 @@ footer {
 
   .navbar .menu-items {
     flex-direction: row;
-    justify-content: flex-end;
-    text-align: end;
+    justify-content: center;
+    text-align: center;
     transform: none;
     height: 40px;
     transition: none;
     box-shadow: none;
     padding: 5px;
+    width: auto;
   }
 
-  div .container .nav-container {
+  .container .nav-container {
+    width: auto;
+  }
+
+  .nav-container input.checkbox {
     display: none;
   }
 
@@ -414,25 +417,77 @@ footer {
     display: none;
   }
 
-  .nav-container input.checkbox {
-    display: none;
+  /* Main Section */
+
+  #indexmain {
+    display: grid;
+    grid-template-areas:
+      "img-top text-top"
+      "text-mid img-mid"
+      "img-bottom text-bottom";
+
+    grid-template-rows: 0.33fr 0.33fr 0.33fr;
+    grid-template-columns: 0.5fr 0.5fr;
   }
 
-  /* Main Section */
-  main {
-    /* width: 100vw; */
+  /* Circles Index*/
+
+  #bioheading {
+    grid-area: text-top;
   }
-  /* Circles */
+
+  #projectsection {
+    grid-area: img-mid;
+  }
+
+  #contactsection {
+    grid-area: img-bottom;
+  }
+
   #dot1 {
     height: 300px;
     width: 300px;
+    grid-area: img-top;
   }
+
   #dot2 {
     height: 450px;
     width: 450px;
+    grid-area: img-mid;
   }
+
   #dot3 {
     height: 380px;
     width: 380px;
+  }
+
+  /* Bio and Project Page*/
+
+  .backgroundcircle {
+    background-color: #020202;
+  }
+  .pagetextblack {
+    color: var(--white);
+  }
+
+  p.pagetextblack {
+    color: var(--white);
+  }
+
+  /* Bio Page Reorganisation through grid */
+  #bioheadshot {
+    max-width: 300px;
+  }
+  #biotext {
+    text-align: left;
+  }
+
+  /* Projects Page Reorganisation through grid */
+  #peoplewatchingtext {
+    text-align: left;
+  }
+
+  #lazygreyhoundtext {
+    text-align: left;
   }
 }
