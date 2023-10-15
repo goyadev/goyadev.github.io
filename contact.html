@@ -22,71 +22,71 @@
       <a href="https://github.com/goyadev" id="github">GitHub</a>
     </header>
 
-    <main class="main" id="contactmain">
-      <nav>
-        <div class="navbar">
-          <div class="container nav-container">
-            <input class="checkbox" type="checkbox" name="" id="" />
-            <div class="hamburger-lines">
-              <span class="line line1"></span>
-              <span class="line line2"></span>
-              <span class="line line3"></span>
-            </div>
+    <nav>
+      <div class="navbar">
+        <div class="container nav-container">
+          <input class="checkbox" type="checkbox" name="" id="" />
+          <div class="hamburger-lines">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+          </div>
 
-            <div class="menu-items">
-              <li><a href="./index.html">Home</a></li>
-              <li><a href="./bio.html">Bio</a></li>
-              <li><a href="./projects.html">Projects</a></li>
-              <li><a href="./contact.html">Contact</a></li>
-            </div>
+          <div class="menu-items">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./bio.html">Bio</a></li>
+            <li><a href="./projects.html">Projects</a></li>
+            <li><a href="./contact.html">Contact</a></li>
           </div>
         </div>
-      </nav>
+      </div>
+    </nav>
 
-      <section>
-        <form
-          id="fs-frm"
-          name="simple-contact-form"
-          accept-charset="utf-8"
-          action="https://formspree.io/f/mgejryab"
-          method="POST"
-        >
-          <fieldset id="fs-frm-inputs">
-            <label for="full-name">Full Name</label>
-            <input
-              type="text"
-              name="name"
-              id="full-name"
-              placeholder="First and Last"
-              required=""
-            />
-            <label for="email-address">Email Address</label>
-            <input
-              type="email"
-              name="_replyto"
-              id="email-address"
-              placeholder="email@yourname.com"
-              required=""
-            />
-            <label for="message">Message</label>
-            <textarea
-              rows="5"
-              name="message"
-              id="message"
-              placeholder="Your message here"
-              required=""
-            ></textarea>
-            <input
-              type="hidden"
-              name="_subject"
-              id="email-subject"
-              value="Contact Form Submission"
-            />
-          </fieldset>
-          <input type="submit" value="Submit" />
-        </form>
-      </section>
+    <main class="contact-section">
+      <h2 class="contact-header">Contact</h2>
+      <form
+        id="fs-frm"
+        name="simple-contact-form"
+        accept-charset="utf-8"
+        action="https://formspree.io/f/mgejryab"
+        method="POST"
+      >
+        <fieldset id="fs-frm-inputs">
+          <label for="full-name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="full-name"
+            placeholder="First and Last"
+            required=""
+          />
+          <label for="email-address">Email</label>
+          <input
+            type="email"
+            name="_replyto"
+            id="email-address"
+            placeholder="email@yourname.com"
+            required=""
+          />
+          <label for="message">Message</label>
+          <textarea
+            rows="5"
+            name="message"
+            id="message"
+            placeholder="Your message here"
+            required=""
+          ></textarea>
+          <input
+            type="hidden"
+            name="_subject"
+            id="email-subject"
+            value="Contact Form Submission"
+          />
+        </fieldset>
+        <button type="submit" value="Submit">Submit</button>
+      </form>
     </main>
+
     <footer>
       <p>Copyright 2023</p>
     </footer>
