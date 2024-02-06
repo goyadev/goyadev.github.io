@@ -34,11 +34,6 @@ There is a style for active links where it changes to blue, hover state where it
 
 ### Screenshots
 
-> Please include the following:
->
-> You can do this by saving the images in a folder in your repo, and including
-> them in your readme document with the following Markdown code:
-
 #### Screenshots - Mobile
 
 ![ iPhone SE Mobile Bio ](./images/iPhone-SE-mobile-bio.png)
