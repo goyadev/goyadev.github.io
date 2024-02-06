@@ -29,8 +29,7 @@ There are four pages on this website: index, bio, projects and contact. They are
 There is a style for active links where it changes to blue, hover state where it changes to pink. No JavaScript was added at this point in time, but I would like to add it in the future.
 
 - [x] Different styles for active, hover and focus states.
-- [x] Include JavaScript to add some dynamic elements to your site. (Extra
-      tricky!)
+- [] Include JavaScript to add some dynamic elements to your site. (
 
 ### Screenshots
 
