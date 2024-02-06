@@ -1,6 +1,6 @@
 # Goya Zheng - Portfolio Task
 
-[My portfolio site](goyadev.github.io](https://goyadev.github.io/index.html)
+[My portfolio site](https://goyadev.github.io/index.html)
 
 ## Project Requirements
 
