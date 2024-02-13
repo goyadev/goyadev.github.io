@@ -4,14 +4,18 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import { Head } from "./components/Head/Head";
 import { NavBar } from "./components/NavBar/NavBar";
+import { Foot } from "./components/Foot/Foot";
+import { Bio } from "./components/Bio/Bio";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
+      <Foot />
       <Head />
       <NavBar />
+      <Bio />
     </>
   );
 }

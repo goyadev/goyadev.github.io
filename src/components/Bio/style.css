@@ -1,0 +1,28 @@
+#bioheading {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+
+#bioheadshot.circleimage {
+  max-width: 300px;
+  display: flex;
+  /* justify-content: center; */
+}
+
+#biotext {
+  padding: 3rem;
+  text-align: left;
+  align-self: center;
+}
+
+section {
+  display: flex;
+  /* align-content: center; */
+}
+
+div.backgroundcircle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

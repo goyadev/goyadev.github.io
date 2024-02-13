@@ -75,3 +75,11 @@ body {
   width: auto;
   height: auto;
 }
+
+/* circles */
+
+.circleimage {
+  margin-top: 1rem;
+  width: 50%;
+  border-radius: 50%;
+}

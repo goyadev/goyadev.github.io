@@ -1,9 +1,9 @@
 header {
   display: grid;
   grid-template-areas:
-    ".       top .      "
-    ".       mid .      "
-    "bottoml .   bottomr";
+    ". top ."
+    ". mid ."
+    "bottoml . bottomr";
   grid-template-columns: 0.5fr 1fr 0.5fr;
   grid-template-rows: 0.5fr 1fr 0.5fr;
   background-color: var(--black);
@@ -20,7 +20,14 @@ h1 {
 }
 
 #headingname {
+  grid-area: top;
+  color: black;
+}
+
+#logo {
   grid-area: mid;
+  width: 20%;
+  justify-self: center;
 }
 
 #linkedin {
