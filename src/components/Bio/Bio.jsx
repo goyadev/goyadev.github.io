@@ -13,17 +13,26 @@ export function Bio() {
           />
           <h2 id="bioheading">Bio</h2>
           <p class="pagetextblack" id="biotext">
-            Goya Zheng, an emerging developer, is actively immersed in the
-            SheCodes Plus program and pursuing a CertIV in WebDev, showcasing
-            skills in HTML/CSS, Python, and Javascript, with a touch of C# for
-            Unity. Fueled by a creative flair, she navigates the realms of web
-            dev, game dev and programming.
+            Goya Zheng has background as both a people leader and a former
+            business owner. She is venturing into the coding realm armed with a
+            Bachelor of Music and a Master of Music Therapy. Having recently
+            completed the SheCodes Plus program, she is further refining her
+            skills in web development through a Cert IV program.
             <br />
-            <br />A strategic planner at heart, Goya thrives on devising
-            innovative solutions, with a strengths-based approach. Beyond the
-            code, her musical background adds a unique rhythm to her endeavors,
-            amplifying her multifaceted passion for creativity, technology, and
-            the harmonious synergy of programming languages.
+            <br />
+            Proficient in HTML/CSS, Python, JavaScript, Django Rest Framework,
+            and React, Goya infuses her coding journey with a playful spirit.
+            During her downtime, she enjoys pursuing side projects, including
+            crafting games in Unity using C#. Currently, she's working on a cosy
+            game that aims to promote awareness of greyhounds in need of
+            fostering or rescue.
+            <br />
+            <br />
+            Fuelled by a strategic approach, Goya thrives on devising innovative
+            solutions that are sprinkled with creativity. Beyond the technical
+            realm, her musical background infuses her tech adventures with a
+            delightful rhythm, embodying her deep-seated passion for merging
+            creativity and technology.
           </p>
         </div>
       </section>
