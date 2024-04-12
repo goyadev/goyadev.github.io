@@ -5,6 +5,7 @@ import App from "./App.jsx";
 import "./index.css";
 import { Bio } from "./components/Bio/Bio.jsx";
 import NotFound from "./components/Pages/NotFound.jsx";
+import Projects from "./components/Pages/Projects.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -14,7 +15,7 @@ const router = createBrowserRouter([
         path: "/",
         element: <Bio />,
       },
-      // { path: "/projects", element: <Projects /> },
+      { path: "/projects", element: <Projects /> },
       // { path: "/projects", element: <Projects /> },
       { path: "*", element: <NotFound /> },
     ],

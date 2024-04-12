@@ -15,9 +15,9 @@ export function Bio() {
           <p class="pagetextblack" id="biotext">
             Goya Zheng has background as both a people leader and a former
             business owner. She is venturing into the coding realm armed with a
-            Bachelor of Music and a Master of Music Therapy. Having recently
-            completed the SheCodes Plus program, she is further refining her
-            skills in web development through a Cert IV program.
+            Bachelor of Music and a Master of Music Therapy. After recently
+            finishing the SheCodes Plus program, she is now sharpening her
+            skills as she wraps up a Cert IV in Web Development this year.
             <br />
             <br />
             Proficient in HTML/CSS, Python, JavaScript, Django Rest Framework,
