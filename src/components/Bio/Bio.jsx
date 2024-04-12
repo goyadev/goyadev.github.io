@@ -2,17 +2,17 @@ import "./style.css";
 
 export function Bio() {
   return (
-    <main class="mainpages" id="biomain">
-      <section class="section">
-        <div class="backgroundcircle">
+    <main className="mainpages" id="biomain">
+      <section className="section">
+        <div className="backgroundcircle">
           <img
-            src="public/pssmile_SheCodesPortraitGoya cropped.png"
-            class="circleimage"
+            src="/pssmile_SheCodesPortraitGoya cropped.png"
+            className="circleimage"
             id="bioheadshot"
             alt="Goya, an Asian woman with dark short hair, smiling wearing a bright pink shirt"
           />
           <h2 id="bioheading">Bio</h2>
-          <p class="pagetextblack" id="biotext">
+          <p className="pagetextblack" id="biotext">
             Goya Zheng has background as both a people leader and a former
             business owner. She is venturing into the coding realm armed with a
             Bachelor of Music and a Master of Music Therapy. After recently
