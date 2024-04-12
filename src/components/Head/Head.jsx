@@ -5,12 +5,8 @@ export function Head() {
     <header>
       <h1 id="headingname">Goya Zheng</h1>
 
-      <a href="https://github.com/goyadev" id="logo">
-        <img
-          src="public/GZlogo.png"
-          class="social-logos"
-          alt="GZ developer logo"
-        />
+      <a href="/" id="logo">
+        <img src="/GZlogo.png" class="social-logos" alt="GZ developer logo" />
       </a>
 
       <a href="https://www.linkedin.com/in/goya-zheng-615b54111/" id="linkedin">

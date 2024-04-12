@@ -8,12 +8,12 @@ function Projects() {
         <section className="projectsection" id="planidea">
           <div className="backgroundcircle">
             <h2 className="pagetext">planidea</h2>
-            {/* <img
-              src="./public/lazy_greyhound_project.jpg"
+            <img
+              src="./logo-planidea-dark.png"
               class="circleimage"
               id="lazygreyhoundimage"
               alt="website screenshot of purple pixel art landscape with pixel art greyhound at top."
-            /> */}
+            />
             <p className="pagetext" id="planideatext">
               A group project as a part of the SheCodes Plus program.
               <a href="https://planidea.netlify.app/" className="projectlink">
