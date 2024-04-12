@@ -1,4 +1,3 @@
-/* edit for edit */
 
 nav {
   background-color: var(--black);
@@ -52,7 +51,9 @@ nav {
 }
 
 .navbar .nav-container a:hover {
+
   font-weight: bolder;
+
 }
 
 .nav-container {

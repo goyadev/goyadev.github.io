@@ -1,8 +1,11 @@
 import "./style.css";
 
+import { Link } from "react-router-dom"
+
 export function NavBar() {
   return (
     <nav>
+
       <div class="navbar">
         <div class="container nav-container">
           <input
@@ -11,6 +14,7 @@ export function NavBar() {
             name="hamburgercheckbox"
             id="checkboxburger"
           />
+
           <div class="hamburger-lines">
             <span class="line line1"></span>
             <span class="line line2"></span>

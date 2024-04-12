@@ -1,0 +1,61 @@
+#bioheading {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+  color: --pink;
+}
+
+#bioheadshot.circleimage {
+  max-width: 300px;
+  display: flex;
+  /* justify-content: center; */
+}
+
+#biotext {
+  padding: 3rem;
+  text-align: left;
+  align-self: center;
+}
+
+section {
+  display: flex;
+  /* align-content: center; */
+}
+
+div.backgroundcircle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+}
+
+.circleimage {
+  align-self: center;
+}
+
+@media all and (min-width: 1080px) {
+  #biotext {
+    margin-left: 300px;
+    margin-right: 300px;
+  }
+}
+
+@media all and (min-width: 1024px) and (max-width: 1280px) {
+  #biotext {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  #biotext {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+}
+
+@media all and (max-width: 480px) {
+}

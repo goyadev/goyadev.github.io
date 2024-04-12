@@ -1,0 +1,54 @@
+/* Form Styling */
+#fs-frm {
+  justify-content: center;
+  align-items: center;
+  min-height: 600px;
+  width: 100%;
+}
+
+#fs-frm button,
+fieldset {
+  border: 0;
+  font-size: 16px;
+  color: var(--white);
+}
+
+#fs-frm-inputs label {
+  margin-bottom: 5px;
+}
+
+#fs-frm-inputs input {
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+#fs-frm-inputs label,
+#fs-frm-inputs input {
+  display: block;
+  /* border: 0; */
+}
+
+#fs-frm-inputs input::placeholder,
+#fs-frm-inputs textarea::placeholder {
+  color: var(--white);
+}
+
+#full-name {
+  background-color: var(--black);
+  border: 1px solid var(--blue);
+}
+
+#email-address {
+  background-color: var(--black);
+  border: 1px solid var(--pink);
+}
+
+#message {
+  background-color: var(--black);
+  border: 1px solid var(--mint);
+}
+
+#fs-frm-inputs input,
+#fs-frm-inputs textarea {
+  width: 100%;
+}
