@@ -1,3 +1,4 @@
+
 nav {
   background-color: var(--black);
   align-self: flex-start;
@@ -50,7 +51,9 @@ nav {
 }
 
 .navbar .nav-container a:hover {
-  /* font-weight: bolder; */
+
+  font-weight: bolder;
+
 }
 
 .nav-container {

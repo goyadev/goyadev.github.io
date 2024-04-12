@@ -1,9 +1,11 @@
 header {
   display: grid;
   grid-template-areas:
-    ". top ."
-    ". mid ."
-    "bottoml . bottomr";
+
+    ".       top .      "
+    ".       mid .      "
+    "bottoml .   bottomr";
+
   grid-template-columns: 0.5fr 1fr 0.5fr;
   grid-template-rows: 0.5fr 1fr 0.5fr;
   background-color: var(--black);
@@ -20,6 +22,7 @@ h1 {
 }
 
 #headingname {
+
   grid-area: top;
   color: black;
 }
@@ -28,6 +31,9 @@ h1 {
   grid-area: mid;
   width: 30%;
   justify-self: center;
+
+  grid-area: mid;
+
 }
 
 #linkedin {
@@ -46,7 +52,11 @@ h1 {
   padding: 6px;
 }
 
+
 @media (min-width: 1280px) {
+
+@media (min-width: 769px) {
+
   /* Repositioning the items in Header */
   header {
     display: grid;
@@ -67,6 +77,7 @@ h1 {
     grid-area: bottomll;
     justify-self: center;
   }
+
 
   #logo {
     width: 20%;
@@ -95,4 +106,5 @@ h1 {
 }
 
 @media all and (max-width: 480px) {
+
 }

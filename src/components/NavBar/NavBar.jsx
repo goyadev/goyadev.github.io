@@ -1,32 +1,38 @@
 import "./style.css";
-import { Link } from "react-router-dom";
+
+import { Link } from "react-router-dom"
 
 export function NavBar() {
   return (
     <nav>
-      <div className="navbar">
-        <div className="container nav-container">
+
+      <div class="navbar">
+        <div class="container nav-container">
           <input
-            className="checkbox"
+            class="checkbox"
             type="checkbox"
             name="hamburgercheckbox"
             id="checkboxburger"
           />
-          <div className="hamburger-lines">
-            <span className="line line1"></span>
-            <span className="line line2"></span>
-            <span className="line line3"></span>
+
+          <div class="hamburger-lines">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
           </div>
 
-          <ul className="menu-items">
+          <ul class="menu-items">
             <li>
-              <Link to="/">Home</Link>
+              <a href="./index.html">Home</a>
             </li>
             <li>
-              <Link to="/projects">Projects</Link>
+              <a href="./bio.html">Bio</a>
             </li>
             <li>
-              <Link to="/contact">Contact</Link>
+              <a href="./projects.html">Projects</a>
+            </li>
+            <li>
+              <a href="./contact.html">Contact</a>
             </li>
           </ul>
         </div>
