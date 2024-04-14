@@ -1,11 +1,10 @@
 import "./style.css";
 
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
 
 export function NavBar() {
   return (
     <nav>
-
       <div class="navbar">
         <div class="container nav-container">
           <input
@@ -23,16 +22,16 @@ export function NavBar() {
 
           <ul class="menu-items">
             <li>
-              <a href="./index.html">Home</a>
+              <a href="/">Home</a>
             </li>
             <li>
-              <a href="./bio.html">Bio</a>
+              <a href="#bio">Bio</a>
             </li>
             <li>
-              <a href="./projects.html">Projects</a>
+              <a href="#projects">Projects</a>
             </li>
             <li>
-              <a href="./contact.html">Contact</a>
+              <a href="#contact">Contact</a>
             </li>
           </ul>
         </div>
