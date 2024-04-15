@@ -7,6 +7,7 @@ import { Bio } from "./components/Bio/Bio.jsx";
 import NotFound from "./components/Pages/NotFound.jsx";
 import Projects from "./components/Pages/Projects.jsx";
 import Contact from "./components/Pages/Contact.jsx";
+import UnityGame from "./components/Pages/UnityGame.jsx";
 
 const router = createHashRouter([
   {
@@ -20,6 +21,7 @@ const router = createHashRouter([
       { path: "/bio", element: <Bio /> },
       { path: "/projects", element: <Projects /> },
       { path: "/contact", element: <Contact /> },
+      { path: "/peoplewatching", element: <UnityGame /> },
       { path: "*", element: <NotFound /> },
     ],
   },

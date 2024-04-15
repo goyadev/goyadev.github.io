@@ -50,7 +50,7 @@ function Projects() {
         <section className="projectsection" id="peoplewatching">
           <div className="backgroundcircle">
             <h2 className="pagetext">"People" Watching</h2>
-            <a href="https://levelherup.com.au/" className="projectlink">
+            <a href="#peoplewatching" className="projectlink">
               <img
                 src="./people_watching_project.jpg"
                 className="circleimage"
