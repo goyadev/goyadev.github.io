@@ -1,26 +1,24 @@
 import "./style.css";
 
-import { Link } from "react-router-dom";
-
 export function NavBar() {
   return (
     <nav>
-      <div class="navbar">
-        <div class="container nav-container">
+      <div className="navbar">
+        <div className="container nav-container">
           <input
-            class="checkbox"
+            className="checkbox"
             type="checkbox"
             name="hamburgercheckbox"
             id="checkboxburger"
           />
 
-          <div class="hamburger-lines">
-            <span class="line line1"></span>
-            <span class="line line2"></span>
-            <span class="line line3"></span>
+          <div className="hamburger-lines">
+            <span className="line line1"></span>
+            <span className="line line2"></span>
+            <span className="line line3"></span>
           </div>
 
-          <ul class="menu-items">
+          <ul className="menu-items">
             <li>
               <a href="/">Home</a>
             </li>
