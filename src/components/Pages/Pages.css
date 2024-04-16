@@ -1,3 +1,8 @@
+/* mouse over link */
+h2:hover {
+  color: var(--blue);
+}
+
 .notfound {
   display: flex;
   flex-direction: column;
@@ -25,7 +30,13 @@ a {
   max-width: 350px;
 }
 
-@media all and (min-width: 1080px) {
+@media all and (min-width: 1450px) {
+  .pagetext {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+@media all and (min-width: 1281px) and (max-width: 1449px) {
   .pagetext {
     margin-left: 300px;
     margin-right: 300px;
@@ -33,12 +44,19 @@ a {
 }
 
 @media all and (min-width: 1024px) and (max-width: 1280px) {
+  .pagetext {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
 }
 
 @media all and (min-width: 768px) and (max-width: 1024px) {
 }
 
 @media all and (min-width: 480px) and (max-width: 768px) {
+  /* .container {
+    visibility: hidden;
+  } */
 }
 
 @media all and (max-width: 480px) {

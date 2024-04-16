@@ -11,7 +11,7 @@ function UnityGame() {
   const loadingPercentage = Math.round(loadingProgression * 100);
 
   return (
-    <div className="container" style={{ display: "flex" }}>
+    <div className="container">
       <div style={{ margin: "auto" }}>
         {isLoaded === false && (
           <div className="loading-overlay">
@@ -21,7 +21,7 @@ function UnityGame() {
         <Unity
           className="unity"
           unityProvider={unityProvider}
-          style={{ width: 800, height: 600 }}
+          style={{ width: "100%" }}
         />
       </div>
     </div>

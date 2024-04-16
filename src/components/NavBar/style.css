@@ -16,7 +16,7 @@ nav {
 }
 
 .contact-section {
-  background-color: black;
+  background-color: var(--black);
   padding: 0 10% 0 10%;
   margin: auto;
 }

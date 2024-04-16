@@ -7,7 +7,9 @@ function Projects() {
       <div id="projectsmain">
         <section className="projectsection" id="planidea">
           <div className="backgroundcircle">
-            <h2 className="pagetext">planidea</h2>
+            <a href="https://planidea.netlify.app/">
+              <h2 className="pagetext">planidea</h2>
+            </a>
             <a href="https://planidea.netlify.app/">
               <img
                 src="./logo-planidea-dark.png"
@@ -19,8 +21,8 @@ function Projects() {
             <p className="pagetext" id="planideatext">
               A group project as a part of the SheCodes Plus program. planidea
               was created in collaboration to meet client needs for a platform
-              to allow workshop ideas to come to life, with organisers knowing
-              that there was interest before moving forward on planning.
+              allowing workshop ideas to come to life. Organisers then know that
+              there is interest before moving forward on planning.
               <br />
               <br />
               Goya worked on the design and front-end of this project. DRF,
@@ -30,7 +32,9 @@ function Projects() {
         </section>
         <section className="projectsection" id="artstarter">
           <div className="backgroundcircle">
-            <h2 className="pagetext">Artstarter</h2>
+            <a href="https://artstarter.netlify.app/">
+              <h2 className="pagetext">Artstarter</h2>
+            </a>
             <a href="https://artstarter.netlify.app/">
               <img
                 src="./artstarter.png"
@@ -49,7 +53,9 @@ function Projects() {
         </section>
         <section className="projectsection" id="peoplewatching">
           <div className="backgroundcircle">
-            <h2 className="pagetext">"People" Watching</h2>
+            <a href="#peoplewatching" className="projectlink">
+              <h2 className="pagetext">"People" Watching</h2>
+            </a>
             <a href="#peoplewatching" className="projectlink">
               <img
                 src="./people_watching_project.jpg"
@@ -59,23 +65,22 @@ function Projects() {
               />
             </a>
             <p className="pagetext" id="peoplewatchingtext">
-              In the midst of the 2023
-              <a href="https://levelherup.com.au/" className="projectlink">
-                Level Her Up
-              </a>
-              48h Game Jam, Goya played a key role in bringing "People" Watching
-              to life. Inspired by the simple act of observing café life, she
-              delved into the world of C# coding using Unity and Yarn Spinner to
-              create the narrative game based on the theme of 'connection'.
-              Beyond the coding challenges, Goya also created the game's
-              atmospheric theme music, adding a personal touch to the project.
+              During the 2023 Level Her Up 48h Game Jam, Goya played a key role
+              in bringing "People" Watching to life. Inspired by the simple act
+              of observing café life, she delved into the world of C# coding
+              using Unity and Yarn Spinner to create the narrative game based on
+              the theme of 'connection'. Beyond the coding challenges, Goya also
+              created the game's atmospheric theme music, adding a personal
+              touch to the project.
             </p>
           </div>
         </section>
 
         <section className="projectsection" id="lazygreyhound">
           <div className="backgroundcircle">
-            <h2 className="pagetext">lazy greyhound</h2>
+            <a href="https://www.lazygreyhoundgame.com" className="projectlink">
+              <h2 className="pagetext">lazy greyhound</h2>
+            </a>
             <a href="https://www.lazygreyhoundgame.com" className="projectlink">
               <img
                 src="./lazy_greyhound_project.jpg"
@@ -99,7 +104,9 @@ function Projects() {
         </section>
         <section className="projectsection" id="peoplewatching">
           <div className="backgroundcircle">
-            <h2 className="pagetext">Django SheCodes News</h2>
+            <a href="https://github.com/goyadev/django">
+              <h2 className="pagetext">Django SheCodes News</h2>
+            </a>
             <a href="https://github.com/goyadev/django">
               <img
                 src="./SheCodesNewsDjango.png"
@@ -117,7 +124,9 @@ function Projects() {
         </section>
         <section className="projectsection" id="pythonweatherapp">
           <div className="backgroundcircle">
-            <h2 className="pagetext">Weather App</h2>
+            <a href="https://github.com/goyadev/sc-python">
+              <h2 className="pagetext">Weather App</h2>
+            </a>
             <a href="https://github.com/goyadev/sc-python">
               <img
                 src="./python-code-snippet.png"
@@ -137,7 +146,9 @@ function Projects() {
 
         <section className="projectsection" id="portfolio">
           <div className="backgroundcircle">
-            <h2 className="pagetext">This Portfolio Site</h2>
+            <a href="/">
+              <h2 className="pagetext">This Portfolio Site</h2>
+            </a>
             <a href="/">
               <img
                 src="./portfoliosite.png"
